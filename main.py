@@ -29,7 +29,7 @@ def _merge_2_file_():
 
 # scenario when we have 2 excel sheets
 # want to get only record that have in first file
-def _merge_not_in_():
+def _filter_not_in_():
     external_key_column = 'External_Key_Field'
     result_file_name    = 'result_file_name.csv'
     # Open left file 
