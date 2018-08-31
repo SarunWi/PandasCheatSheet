@@ -6,18 +6,18 @@ import pandas as pd
 INPUT_PATH 	= 'input\\'
 RESULT_PATH = 'output\\'
 
-left_file_name  = 'left_file_name.csv'
-right_file_name = 'right_file_name.csv'
+left_file_name  = 'example1.csv'
+right_file_name = 'example2.csv'
 
 def main():
-    _merge_not_in_()
+    _merge_2_file_()
 
 
 # scenario when we have 2 csv file 
 # merge them and keep only record that found both file 
 def _merge_2_file_():
-    external_key_column = 'External_Key_Field'
-    result_file_name    = 'result_file_name.csv'
+    external_key_column = 'External_Key'
+    result_file_name    = 'merge_example_1_2.csv'
     # Open left file
     df1 = pd.read_csv(INPUT_PATH+left_file_name,dtype={external_key_column:str})
     # Open right file
